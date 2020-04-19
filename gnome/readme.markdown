@@ -1,3 +1,14 @@
+gnome theme tips
+---
+https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-gnome-shell-desktop-settings-linux/
+
+dump and load gnome config
+---
+```bash
+dconf dump / > full_backup
+dconf load / < full_backup
+```
+
 icons
 ---
 icons should be placed in `~/.icons` and it will show up in Tweaks under Appearance
