@@ -26,4 +26,10 @@ terminal colors
 https://flatuicolors.com/
 
 ![gnome appearance settings](./appearance.png)
+![gnome appearance 2](./appearance_2.png)
 ![gnome fonts settings](./fonts.png)
+![chromium shortcut](./launch_chromium.png)
+![chromium 2 shortcut](./launch_chromium_2.png)
+![nautilus shortcut](./launch_nautilus.png)
+![terminal shortcut](./launch_terminal.png)
+![search and minimize all windows shortcut](./search_and_minimize_all_windows.png)
