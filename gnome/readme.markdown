@@ -9,6 +9,27 @@ dconf dump / > full_backup
 dconf load / < full_backup
 ```
 
+set default cursor icons
+---
+```bash
+/usr/share/icons/default/index.theme
+
+change to
+
+[Icon Theme]
+Inherits=OSX-ElCap
+```
+
+change login background picture
+---
+```bash
+/usr/share/gnome-shell/theme/ubuntu.css
+
+#lockDialogGroup {
+  background: #2c001e url(file:///home/dave/Pictures/picture.jpg);
+  background-repeat: no-repeat;}
+```
+
 icons
 ---
 icons should be placed in `~/.icons` and it will show up in Tweaks under Appearance
