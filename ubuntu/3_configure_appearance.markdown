@@ -1,10 +1,29 @@
 configure appearance
 ===
 
+install vanilla gnome
+---
+```bash
+sudo apt install gnome-session
+sudo update-alternatives --config gdm3.css
+```
+- select option number with gnome-shell.css
+
+```bash
+sudo apt install vanilla-gnome-desktop
+reboot
+```
+- on login screen, click gear icon and select 'GNOME on Xorg'
+
+uninstall dock
+---
+```bash
+sudo apt remove gnome-shell-extension-ubuntu-dock
+```
+
 mac theme instructions
 ---
 https://www.noobslab.com/2018/08/macbuntu-1804-transformation-pack-ready.html
-
 
 themes, icons and cursors
 ---
@@ -28,6 +47,9 @@ sudo add-apt-repository ppa:noobslab/macbuntu
 sudo apt-get update
 sudo apt-get install slingscold
 ```
+
+tweaks settings
+---
 ![enable_shell_themes](./enable_shell_themes.png)
 ![themes](./themes.png)
 ![fonts](./fonts.png)
@@ -35,16 +57,11 @@ sudo apt-get install slingscold
 misc
 ===
 
-uninstall dock
+dump and load gnome config
 ---
 ```bash
-sudo apt remove gnome-shell-extension-ubuntu-dock
-```
-
-install vanilla gnome
----
-```bash
-sudo apt install vanilla-gnome-desktop
+dconf dump / > full_backup
+dconf load / < full_backup
 ```
 
 install fonts

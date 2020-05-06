@@ -66,7 +66,9 @@ sudo apt install steam-installer
 vlc
 ---
 ```bash
-sudo snap install vlc
+sudo add-apt-repository ppa:videolan/stable-daily
+sudo apt update
+sudo apt install vlc
 ```
 
 nautilus-mediainfo
@@ -75,6 +77,12 @@ nautilus-mediainfo
 sudo add-apt-repository ppa:caldas-lopes/ppa
 sudo apt update
 sudo apt install nautilus-mediainfo
+```
+
+video thumbnails
+---
+```bash
+sudo apt install ffmpegthumbnailer
 ```
 
 keepassxc
@@ -88,7 +96,7 @@ sudo apt install keepassxc
 okular (pdf viewer)
 ---
 ```bash
-sudo snap install okular
+sudo apt install okular
 ```
 
 gdmap (graphical disk map)
