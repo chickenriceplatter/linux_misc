@@ -7,6 +7,12 @@ fix broken installs (if an installation fails)
 sudo apt --fix-broken install
 ```
 
+git
+---
+```bash
+sudo apt install git
+```
+
 zsh & oh-my-zsh
 ---
 ```bash
@@ -14,12 +20,6 @@ sudo apt update
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s /bin/zsh
-```
-
-git
----
-```bash
-sudo apt install git
 ```
 
 sublime-text
@@ -51,6 +51,21 @@ sudo apt install nvidia-cuda-toolkit
 which nvcc
 ```
 
+add additional screen resolutions
+---
+open NVIDIA X Server Settings
+
+1. click on 'X Server Display Configuration'.
+2. click on 'Advanced...' button.
+3. 'ViewPortIn' is set to new resolution.
+4. 'ViewPortOut' is set to maximum screen resolution.
+5. 'Panning' is set to new resolution.
+6. click on 'Apply' button.
+7. click 'Save to X Configuration File' button.
+
+![add_additional_resolution](./additional_resolutions.png)
+
+
 chromium browser
 ---
 ```bash
@@ -69,6 +84,14 @@ vlc
 sudo add-apt-repository ppa:videolan/stable-daily
 sudo apt update
 sudo apt install vlc
+```
+
+celluloid
+---
+```bash
+sudo apt-get install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub io.github.celluloid_player.Celluloid
 ```
 
 nautilus-mediainfo
@@ -93,12 +116,6 @@ sudo apt update
 sudo apt install keepassxc
 ```
 
-okular (pdf viewer)
----
-```bash
-sudo apt install okular
-```
-
 gdmap (graphical disk map)
 ---
 ```bash
@@ -109,4 +126,13 @@ psensor (hardware usage and temperatures)
 ---
 ```bash
 sudo apt install psensor
+```
+
+typora (markdown preview)
+---
+```bash
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt update
+sudo apt install typora
 ```
