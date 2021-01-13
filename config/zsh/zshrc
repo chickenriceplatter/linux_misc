@@ -25,13 +25,3 @@ alias open="/usr/bin/nautilus"
 # launch jupyter-notebook
 alias j="jupyter-notebook"
 
-# added by Anaconda3 installer
-export PATH="/home/dave/anaconda3/bin:$PATH"
-
-# add vagrant path
-export PATH="/home/dave/Downloads/vagrant_2.0.2_x86_64/opt/vagrant/bin:$PATH"
-
-# remove vagrant ip from known_hosts
-alias ckh="ssh-keygen -R 192.168.33.10; ssh-keygen -R localhost"
-alias clean="grep -v "localhost" ~/.ssh/known_hosts > ~/.ssh/known_hosts.old; mv ~/.ssh/known_hosts.old
-~/.ssh/known_hosts"

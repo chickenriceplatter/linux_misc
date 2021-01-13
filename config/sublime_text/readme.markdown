@@ -1,6 +1,13 @@
 sublime settings
 ===
 
+install package
+---
+```
+control + shift + p
+Package Control: Install Package
+```
+
 packages to install
 ---
 

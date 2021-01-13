@@ -18,7 +18,7 @@ zsh & oh-my-zsh
 ```bash
 sudo apt update
 sudo apt install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s /bin/zsh
 ```
 
@@ -135,4 +135,11 @@ wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt update
 sudo apt install typora
+```
+
+piper (mouse rgb and buttons)
+---
+```bash
+sudo add-apt-repository ppa:libratbag-piper/piper-libratbag-git
+sudo apt-get update
 ```

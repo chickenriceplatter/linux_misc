@@ -1,6 +1,6 @@
 {
   "auto_complete": false,
-  "color_scheme": "Packages/Materialize/schemes/Material Solarized Dark.tmTheme",
+  "color_scheme": "Packages/Materialize/schemes/Material Solarized Light.tmTheme",
   "ensure_newline_at_eof_on_save": true,
   "hot_exit": false,
   "ignored_packages":
