@@ -143,3 +143,11 @@ piper (mouse rgb and buttons)
 sudo add-apt-repository ppa:libratbag-piper/piper-libratbag-git
 sudo apt-get update
 ```
+
+fzf (bash history fuzzy find)
+---
+https://github.com/junegunn/fzf
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
