@@ -1,36 +1,11 @@
 #!/bin/bash
 
-echo "install git"
-sudo apt -y install git
-
-echo "install zsh and oh-my-zsh"
+echo "install zsh"
 sudo apt update
 sudo apt -y install zsh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "install chromium"
 sudo apt -y install chromium-browser
-
-echo "install celluloid"
-sudo apt -y install flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub io.github.celluloid_player.Celluloid
-
-echo "install nautilus mediainfo"
-sudo add-apt-repository ppa:caldas-lopes/ppa
-sudo apt update
-sudo apt -y install nautilus-mediainfo
-
-echo "install video thumbnails"
-sudo apt -y install ffmpegthumbnailer
-
-echo "install keepassxc"
-sudo add-apt-repository ppa:phoerious/keepassxc
-sudo apt update
-sudo apt -y install keepassxc
-
-echo "install psensor"
-sudo apt -y install psensor
 
 echo "install vanilla gnome"
 sudo apt -y install gnome-session
