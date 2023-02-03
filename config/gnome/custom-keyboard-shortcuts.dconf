@@ -1,0 +1,28 @@
+[org/gnome/settings-daemon/plugins/media-keys]
+control-center=''
+terminal=''
+calculator=''
+email=''
+www=''
+search='<Super>space'
+help=''
+home=''
+area-screenshot='<Alt><Super>z'
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+eject=''
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='Tools'
+command='/usr/bin/nautilus'
+name='Launch Files'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='Launch6'
+command='/usr/bin/gnome-terminal --geometry 91x46+0+0'
+name='Launch Terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='Launch5'
+command='chromium-browser --incognito --window-size=2560,1440 --window-position=0,0'
+name='Launch Chromium'
+

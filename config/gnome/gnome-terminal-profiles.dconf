@@ -1,0 +1,23 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(211,215,207)'
+highlight-background-color='rgb(255,170,1)'
+visible-name='dave'
+highlight-foreground-color='rgb(18,0,82)'
+login-shell=true
+palette=['rgb(46,52,54)', 'rgb(237,48,52)', 'rgb(0,199,38)', 'rgb(255,211,0)', 'rgb(60,185,252)', 'rgb(123,97,248)', 'rgb(0,158,46)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(253,187,187)', 'rgb(129,237,48)', 'rgb(253,242,0)', 'rgb(72,173,241)', 'rgb(181,55,242)', 'rgb(0,215,12)', 'rgb(238,238,236)']
+cursor-background-color='rgb(246,249,12)'
+cursor-shape='ibeam'
+cursor-colors-set=true
+highlight-colors-set=true
+use-system-font=true
+use-transparent-background=true
+use-theme-colors=false
+cursor-foreground-color='rgb(249,247,7)'
+font='Monospace 13'
+use-theme-transparency=false
+bold-color-same-as-fg=false
+cursor-blink-mode='on'
+background-color='rgb(0,0,0)'
+background-transparency-percent=25
+bold-color='rgb(246,204,37)'
+audible-bell=false
