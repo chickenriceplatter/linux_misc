@@ -4,12 +4,17 @@ endeavour os
 various app installs
 ---
 ```bash
+sudo pacman -S zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 sudo pacman -S chromium
 sudo pacman -S htop
 sudo pacman -S awesome-terminal-fonts
 sudo pacman -S celluloid
 sudo pacman -S tilix
 sudo pacman -S keepassxc
+
+
 
 yay -S aur/sublime-text-4
 ```
