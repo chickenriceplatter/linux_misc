@@ -95,3 +95,8 @@ install gnome-shell_extensions
 ```bash
 sudo apt install gnome-shell-extensions
 ```
+
+disable chromium brand theme
+---
+![type this in url](./url_bar.png)
+![disable this option](./disable_brand_theme_in_chromium.png)
