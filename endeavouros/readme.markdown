@@ -27,3 +27,26 @@ curl -sSL https://get.rvm.io | bash -s stable
 rvm install 3.2.0
 echo 'gem: --no-document' > ~/.gemrc
 ```
+
+
+mount drives without authentication prompt
+---
+- https://forum.endeavouros.com/t/password-authentication-when-mounting-drives-in-thunar/17812/5
+
+```bash
+sudo su -
+touch /etc/polkit-1/rules.d/10-udisks2.rules
+nano /etc/polkit-1/rules.d/10-udisks2.rules
+```
+
+```bash
+// Allow udisks2 to mount devices without authentication
+// for users in the "wheel" group.
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.freedesktop.udisks2.filesystem-mount-system" ||
+         action.id == "org.freedesktop.udisks2.filesystem-mount") &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});
+```
