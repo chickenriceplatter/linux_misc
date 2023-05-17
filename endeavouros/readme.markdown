@@ -28,6 +28,16 @@ rvm install 3.2.0
 echo 'gem: --no-document' > ~/.gemrc
 ```
 
+node install instructions
+---
+```bash
+sudo pacman -S npm
+```
+add `[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh` to .zshrc
+```bash
+nvm install 17.9 # specify node version
+```
+
 
 mount drives without authentication prompt
 ---
@@ -50,3 +60,16 @@ polkit.addRule(function(action, subject) {
     }
 });
 ```
+
+change icons
+===
+replace icons
+---
+```bash
+sudo mv tilix.svg /usr/share/icons/Mkos-Big-Sur/128x128/apps
+```
+
+use icon at different location
+```
+https://askubuntu.com/questions/1195208/how-do-i-change-the-show-application-logo-with-an-icon
+https://martin.hoppenheit.info/blog/2016/where-to-put-application-icons-on-linux/
