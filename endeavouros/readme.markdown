@@ -1,6 +1,12 @@
 endeavour os
 ===
 
+show aur packages installed
+---
+```bash
+pacman -Qm
+```
+
 various app installs
 ---
 ```bash
@@ -14,7 +20,7 @@ sudo pacman -S celluloid
 sudo pacman -S tilix
 sudo pacman -S keepassxc
 
-
+sudo pacman -Syy imagemagick
 
 yay -S aur/sublime-text-4
 ```
@@ -37,6 +43,32 @@ add `[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh` to .zshrc
 ```bash
 nvm install 17.9 # specify node version
 ```
+
+wkhtmltox install
+---
+download from: https://wkhtmltopdf.org/downloads.html
+```bash
+tar -xf wkhtmltox-0.12.6-3.archlinux-x86_64.pkg.tar.xz
+add wkhtmltox bin to PATH
+```
+
+openssl-1.1.1 install (dependency for wkhtmltox)
+---
+https://stackoverflow.com/questions/72133316/libssl-so-1-1-cannot-open-shared-object-file-no-such-file-or-directory
+```bash
+$ mkdir $HOME/opt && cd $HOME/opt
+$ wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz
+$ tar -zxvf openssl-1.1.1o.tar.gz
+$ cd openssl-1.1.1o
+$ ./config && make && make test
+$ mkdir $HOME/opt/lib
+$ mv $HOME/opt/openssl-1.1.1o/libcrypto.so.1.1 $HOME/opt/lib/
+$ mv $HOME/opt/openssl-1.1.1o/libssl.so.1.1 $HOME/opt/lib/
+```
+add `export LD_LIBRARY_PATH=$HOME/opt/lib:$LD_LIBRARY_PATH` to .zshrc
+
+
+
 
 
 mount drives without authentication prompt
