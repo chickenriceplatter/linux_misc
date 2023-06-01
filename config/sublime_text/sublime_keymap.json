@@ -1,0 +1,5 @@
+[
+  { "keys": ["shift+enter"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  { "keys": ["ctrl+shift+a"], "command": "select_all" },
+  { "keys": ["ctrl+a"], "command": "save", "args": { "async": true } },
+]
