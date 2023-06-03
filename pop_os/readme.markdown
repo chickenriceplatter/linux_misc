@@ -66,13 +66,13 @@ unzip faenza_cupertino.zip
 mv faenza_cupertino /home/dave/.icons
 
 cd /home/dave/linux_misc/files/themes
-unzip gnome_osx_iv_1.4.zip
-mv gnome_osx_iv_1.4 /home/dave/.themes
+unzip gnome_osx.zip
+mv gnome_osx /home/dave/.themes
 
 cd /home/dave/linux_misc/files/cursors
 unzip elcap.zip
 mv elcap /usr/share/icons
-cd /usr/share icons
+cd /usr/share/icons
 sudo chown -R root elcap
 sudo nano /etc/alternatives/x-cursor-theme
 change `Inherits=elcap`
@@ -116,6 +116,12 @@ cp /home/dave/linux_misc/config/sublime_text/sublime_settings.json /home/dave/.c
 cp /home/dave/linux_misc/config/sublime_text/sublime_keymap.json /home/dave/.config/sublime-text/Packages/User/Default\ \(Linux\).sublime-keymap
 ```
 
+setup ssh key
+---
+```bash
+ssh-keygen -t ed25519 -C "chickenriceplatter@gmail.com"
+```
+
 install ruby
 ---
 ```bash
@@ -125,14 +131,6 @@ gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113
 curl -sSL https://get.rvm.io | bash -s stable
 rvm install 3.2.2
 echo 'gem: --no-document' > ~/.gemrc
-```
-
-nautilus media info
----
-```bash
-sudo add-apt-repository ppa:caldas-lopes/ppa
-sudo apt update
-sudo apt install nautilus-mediainfo
 ```
 
 video thumbnails
