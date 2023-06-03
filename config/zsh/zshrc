@@ -2,6 +2,10 @@ export ZSH=/home/dave/.oh-my-zsh
 
 ZSH_THEME="dave"
 
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000000
+SAVEHIST=10000000
+
 plugins=(
   git
 )
@@ -23,6 +27,8 @@ alias s="/opt/sublime_text/sublime_text"
 # open path in gui
 alias open="/usr/bin/nautilus"
 
-# launch jupyter-notebook
-alias j="jupyter-notebook"
+alias c="chromium-browser --incognito --start-maximized"
+
+# nvidia-smi
+alias n="nvidia-smi"
 
