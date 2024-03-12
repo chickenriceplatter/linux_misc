@@ -30,17 +30,22 @@ change login background picture
   background-repeat: no-repeat;}
 ```
 
+cursors
+---
+cursors should be placed in `/usr/share/icons`
+
 icons
 ---
-icons should be placed in `~/.icons` and it will show up in Tweaks under Appearance
+icons should be placed in `/usr/share/icons`
 
 themes
 ---
-themes should be placed in `~/.themes` and it will show up in Tweaks under Apperance
+themes should be placed in `/usr/share/themes`
 
 fonts
 ---
-to use a custom font in gnome terminal, set it as the font for the monospace text under fonts in Tweaks
+fonts can be placed in `~/.fonts`
+
 
 terminal colors
 ---

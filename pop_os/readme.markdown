@@ -60,24 +60,20 @@ dconf load /org/gnome/terminal/legacy/profiles:/ <  gnome-terminal-profiles.dcon
 config gnome appearance
 ---
 ```bash
-mkdir -p /home/dave/.themes
-mkdir -p /home/dave/.icons
-
 cd /home/dave/linux_misc/files/icons
-unzip faenza_cupertino.zip
-mv faenza_cupertino /home/dave/.icons
-
-cd /home/dave/linux_misc/files/themes
-unzip gnome_osx.zip
-mv gnome_osx /home/dave/.themes
+unzip MacBuntu-OS.zip
+sudo cp -r MacBuntu-OS /usr/share/icons
 
 cd /home/dave/linux_misc/files/cursors
-unzip elcap.zip
-mv elcap /usr/share/icons
-cd /usr/share/icons
-sudo chown -R root elcap
+unzip Macbuntu-OSX-cursors.zip
+sudo cp -r Macbuntu-OSX-cursors /usr/share/icons
+
+cd /home/dave/linux_misc/files/themes
+unzip MacBuntu-OS-MJV.zip
+sudo cp -r MacBuntu-OS-MJV /usr/share/themes
+
 sudo nano /etc/alternatives/x-cursor-theme
-change `Inherits=elcap`
+change `Inherits=Macbuntu-OSX-cursors`
 ```
 
 add fonts
@@ -88,6 +84,13 @@ cp /home/dave/linux_misc/files/fonts/monaco_linux.ttf /home/dave/.fonts/
 sudo fc-cache -fv
 ```
 
+install gconf-editor
+---
+```bash
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install dconf-editor
+```
 
 install sublime text
 ---
@@ -187,3 +190,4 @@ sudo apt install npm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 nvm install 17.9.0
 ```
+
